@@ -1,0 +1,270 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import "old";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin-ext');
+.button {
+  width: auto;
+}
+
+ul li {
+  font-size: 16px;
+}
+
+.nav-tabs {
+  border-bottom: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  li {
+    border-radius: 0;
+    background-color: transparent;
+    margin: 1px;
+    background-color: #227497;
+    border: 1px solid #c8c8c8;
+    height: 61px;
+    line-height: 61px;
+    font-weight: 300;
+    flex: 1;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    a {
+      background-color: transparent !important;
+      border: none !important;
+      border-radius: 0;
+      color: #ffffff;
+      font-size: 12px;
+      line-height: 61px;
+      padding: 0;
+      text-transform: uppercase;
+    }
+    &.active,
+    &:active:hover,
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #009CD9;
+      a,
+      a:hover,
+      a:active,
+      a:focus {
+        border: none;
+        background-color: transparent;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.progress {
+  border-radius: 0;
+  background-color: #ff5e41; //#feefec;// #FF5E41;
+  opacity: 1;
+  height: 30px;
+  border: none;
+  box-shadow: none;
+  .progress-bar {
+    background-color: #009CD9; // #bfe4f4;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.country-row {
+  margin-bottom: 15px;
+}
+
+.progress-label {
+  line-height: 31px;
+}
+
+.progress-tube-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.progress-tube {
+  height: 31px;
+  opacity: 1;
+  background-color: #009CD9;
+  line-height: 31px;
+  transition: all ease-out 0.3s;
+}
+
+.progress-value {
+  height: 31px;
+  line-height: 31px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.paper {
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+
+  .paper-footer {
+    position: relative;
+    bottom: -20px;
+    margin-bottom: -30px;
+    margin-left: -50px;
+    margin-right: -50px;
+    width: calc(100% + 100px);
+    height: 50px;
+
+    &::before {
+      content: '';
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009cdd+0,ff5e41+100 */
+      background: #009cdd;
+      /* Old browsers */
+      background: -moz-linear-gradient(left, #009cdd 0%, #ff5e41 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #009cdd 0%, #ff5e41 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to left, #009cdd 0%, #ff5e41 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009cdd', endColorstr='#ff5e41', GradientType=1);
+      /* IE6-9 */
+      width: 100%;
+      height: 1px;
+      display: block;
+
+      
+    }
+
+    .paper-footer-link {
+      height: 50px;
+      line-height: 50px;
+      position: absolute;
+      right: 25px;
+      bottom: 0;
+
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+      margin-left: -20px;
+      margin-right: -20px;
+      width: calc(100% + 40px);
+      text-align: center;
+
+      .paper-footer-link {
+        margin-top: 6px;
+        display: inline-block;
+        line-height: 20px;
+        position: relative;
+        font-size: 12px;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 20px;
+    p {
+      font-size: 14px !important;
+    }
+  }
+}
+
+.paper2 {
+  -ms-box-shadow: 0 3px 12px rgba(0, 0, 0, .23), 0 3px 12px rgba(0, 0, 0, .16);
+  -o-box-shadow: 0 3px 12px rgba(0, 0, 0, .23), 0 3px 12px rgba(0, 0, 0, .16);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .23), 0 3px 12px rgba(0, 0, 0, .16);
+  padding: 40px;
+}
+
+.analysis-description {
+  margin-top: 0 !important;
+  margin-bottom: 45px !important;
+}
+
+#logo {
+  text-align: center;
+  color: #ffffff;
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 24px;
+    line-height: 44px;
+    font-family: 'Roboto Slab', sans-serif;
+    span {
+      background-color: #009CD9;
+      padding: 10px;
+      text-transform: uppercase;
+
+      @media (max-width: 767px) {
+        background-color: transparent;
+      }
+    }
+
+    @media (max-width: 767px) {
+      background: #009CD9;
+    }
+  }
+}
+
+#pot {
+  margin-top: 50px;
+}
+
+.feature {
+  background-color: #F0F0F0;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .img-responsive {
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 10px;
+    @media (max-width: 767px) {
+      margin: auto;
+      margin-top: 30px;
+    }
+  }
+  h4 {
+    font-weight: bold;
+    margin-top: 30px;
+  }
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.paper {
+  padding: 40px;
+  padding-bottom: 50px;
+
+  &.extra {
+    padding-bottom: 25px;
+  }
+}
+
+h1,
+h2 {
+  margin: 0;
+}
